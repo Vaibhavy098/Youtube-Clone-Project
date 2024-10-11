@@ -1,0 +1,29 @@
+.sidebar{
+    background-color: white;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 72px;
+    z-index:200; /*should be greater than header beacuse we are placing the sidebar above our header.*/
+    padding-top: 5px;
+}
+.sidebar-link{
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* the properties of align-items(for vertical alignment) and justify-content(for horizontal alignment) are reversed for flex-direction: column*/
+    justify-content: center;
+    cursor: pointer;
+
+}
+.sidebar-link:hover{
+    background-color: lightgrey;
+}
+.sidebar-link img{
+    height:25px;
+    margin-bottom: 5px;
+}
+.sidebar-link div{
+    font-size: 10px;
+}
